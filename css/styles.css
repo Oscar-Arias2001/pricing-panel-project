@@ -3,6 +3,7 @@
 	--white: #fff;
 	--heading-color: #888;
 	--bg-color: #06d6a0;
+	--btn-color: #348efe;
 	--btn-bg-color: #4d98f8;
 	--btn-bg-focus: #e1f1ff;
 	--btn-border-color: #9dd1ff;
@@ -41,22 +42,48 @@ h2 {
 /** WebSite General Styles **/
 .button {
 	display: inline-block;
-	background-color: var(--btn-bg-color);
+	position: relative;
+	color: var(--btn-color);
+	background-color: transparent;
 	border: 0.1rem solid var(--btn-border-color);
-	color: var(--white);
 	padding: 1.2rem 3rem;
 	border-radius: 0.8rem;
 	margin-block: 2rem;
-	transition: 0.2s ease-in-out all;
+	overflow: hidden;
+	transition: 0.35s ease-in-out background-color, 0.35s ease-in-out box-shadow,
+		0.35s ease-in-out transform;
+}
+
+.button::before {
+	position: absolute;
+	content: "";
+	inset-block-start: 0;
+	inset-inline-start: -5rem;
+	background-color: var(--btn-bg-focus);
+	height: 100%;
+	width: 0;
+	isolation: isolate;
+	transform: skewX(45deg);
+	z-index: -1;
+	transition: 0.35s ease-in-out width;
 }
 
 .button--state {
-	color: #348efe;
-	background-color: transparent;
+	background-color: var(--btn-bg-color);
+	color: var(--white);
+}
+
+.button.button--state::before {
+	background-color: #00b4d8;
 }
 
 .button:focus {
-	background-color: var(--btn-bg-focus);
+	transform: scale(1.05);
+	box-shadow: 0.3rem 0.3rem 1rem -0.1rem #caf0f8;
+}
+
+.button:focus::before {
+	width: 170%;
 }
 
 .main,
@@ -75,11 +102,12 @@ h2 {
 @media (hover: hover) {
 	/** WebSite General Styles **/
 	.button:hover {
-		background-color: #00b4d8;
+		transform: scale(1.05);
+		box-shadow: 0.3rem 0.3rem 1rem -0.1rem #caf0f8;
 	}
 
-	.button.button--state:hover {
-		background-color: var(--btn-bg-focus);
+	.button:hover::before {
+		width: 170%;
 	}
 }
 

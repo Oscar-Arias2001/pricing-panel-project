@@ -1,4 +1,4 @@
-# 👕 Pricing Panel Project
+# 🤑 Pricing Panel Project
 
 Template of a pricing panel that can be used in a landing page or website that offers an online service (SaaS) or something like that. Feel free to use it and it was taken as a inspiration from a project created by Travis Williamson on codepen.
 
@@ -12,7 +12,7 @@ Template of a pricing panel that can be used in a landing page or website that o
 
 ## 🌐 Live Demo
 
-🔗 [Watch Live Demo](https://frontendstorenic.netlify.app/)
+🔗 [Watch Live Demo](https://pricingpanelprojectnic.netlify.app/)
 
 ---
 

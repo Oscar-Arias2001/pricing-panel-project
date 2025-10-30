@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="index, follow" />
+		<meta
+			name="description"
+			content="Pricing panel that can be used in a website that offers an online service (SaaS). It was taken as a inspiration from a project created by Travis Williamson on codepen."
+		/>
+		<meta name="keywords" content="pricing, panel, pricing panel, free trial" />
+		<meta name="author" content="Oscar Arias" />
+		<title>Pricing Panel</title>
+
+		<!-- Normalize CSS Reset -->
+		<link rel="preload" href="./css/normalize.css" as="style" />
+		<link rel="stylesheet" href="./css/normalize.css" />
+
+		<!-- Google Website Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- CSS Styles -->
+		<link rel="preload" href="./css/styles.css" as="style" />
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<!-- Main Content Starts -->
+		<main class="main">
+			<div class="panel">
+				<!-- Personal Plan Starts -->
+				<div class="panel__plan">
+					<!-- Panel Picture Starts -->
+					<div class="panel__picture">
+						<picture>
+							<source srcset="./img/icon1.webp" type="image/webp" />
+							<img
+								class="panel__icon"
+								src="./img/icon1.png"
+								alt="Personal plan icon."
+								loading="lazy"
+								decoding="async"
+							/>
+						</picture>
+					</div>
+					<!-- Panel Picture Ends -->
+
+					<h2 class="panel__title">Basic</h2>
+
+					<ul class="panel__features">
+						<li class="panel__item">Custom domains</li>
+						<li class="panel__item">Sleeps after 30 mins of inactivity</li>
+					</ul>
+
+					<p class="panel__price">Free</p>
+					<a href="#" class="button button--state">Sign up</a>
+				</div>
+				<!-- Personal Plan Ends -->
+
+				<!-- Small Team Plan Starts -->
+				<div class="panel__plan">
+					<!-- Panel Picture Starts -->
+					<div class="panel__picture">
+						<picture>
+							<source srcset="./img/icon2.webp" type="image/webp" />
+							<img
+								class="panel__icon"
+								src="./img/icon2.png"
+								alt="Small team plan icon."
+								loading="lazy"
+								decoding="async"
+							/>
+						</picture>
+					</div>
+					<!-- Panel Picture Ends -->
+
+					<h2 class="panel__title">Startup</h2>
+
+					<ul class="panel__features">
+						<li class="panel__item">Cloud startup</li>
+						<li class="panel__item">Multiple workers for more powerful apps</li>
+					</ul>
+
+					<p class="panel__price">$150</p>
+					<a href="#" class="button">Free trial</a>
+				</div>
+				<!-- Small Team Plan Ends -->
+
+				<!-- Enterprise Plan Starts -->
+				<div class="panel__plan">
+					<!-- Panel Picture Starts -->
+					<div class="panel__picture">
+						<picture>
+							<source srcset="./img/icon3.webp" type="image/webp" />
+							<img
+								class="panel__icon"
+								src="./img/icon3.png"
+								alt="Enterprise plan icon."
+								loading="lazy"
+								decoding="async"
+							/>
+						</picture>
+					</div>
+					<!-- Panel Picture Ends -->
+
+					<h2 class="panel__title">Enterprise</h2>
+
+					<ul class="panel__features">
+						<li class="panel__item">Dedicated</li>
+						<li class="panel__item">Simple horizontal scalability</li>
+					</ul>
+
+					<p class="panel__price">$400</p>
+					<a href="#" class="button button--state">Free trial</a>
+				</div>
+				<!-- Enterprise Plan Ends -->
+			</div>
+		</main>
+		<!-- Main Content Ends -->
+	</body>
+</html>
